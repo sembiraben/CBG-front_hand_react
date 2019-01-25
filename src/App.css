@@ -1,0 +1,323 @@
+.App {
+  text-align: center;
+  background-color: bisque;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+/* Disables the drag event 
+(mostly used for images) */
+.disabledrag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  overscroll-behavior: contain;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+.row {
+  margin: 5%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* .submitRatingButton {
+  width: 100;
+  height: 30;
+} */
+.button__container {
+  margin-top: 200px;
+  text-align: center;
+}
+.submitRatingButtonL {
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
+}
+.button {
+  font-size: 15px;
+  height: 35px;
+}
+.submitRatingButtonA {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
+}
+.rating-stars {
+  margin-left: 0px;
+  font-size: 72px;
+}
+
+.loginRegisterContainer {
+  margin: 1em;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-left: 0px;
+  height: 10px;
+  width: 100%;
+  /* border: 1px solid #333; */
+}
+.filler {
+  /* background: yellowgreen; */
+  height: 100%;
+  border-radius: inherit;
+  /* transition: width 0.05s ease-in; */
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  /* .sessionHolder {
+    position: relative;
+  } */
+
+  h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .displayedImage {
+    width: 300px;
+  }
+  .app-container {
+    float: center;
+    margin: 0%;
+    width: 100%;
+  }
+
+  .h2 {
+    margin: 0;
+  }
+  /*needed to display the star and rate button on mobile phones*/
+  .starSubmitContainer {
+    height: 115px;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: white;
+    opacity: 1;
+  }
+  .divTable {
+    display: table;
+    margin: auto;
+    /* position: relative; */
+    width: 100%;
+    float: center;
+  }
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .sessionHolder {
+    /* float: center; */
+    /* width: 800px; */
+  }
+  .displayedImage {
+    width: 400px;
+  }
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em !important;
+    margin-block-end: 0.83em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    font-weight: bold;
+  }
+  .app-container {
+    float: center;
+    margin: auto;
+    width: 800px;
+  }
+  .starSubmitContainer {
+    position: relative;
+  }
+  .divTable {
+    display: table;
+    margin: auto;
+    /* position: relative; */
+    width: 80%;
+    float: center;
+  }
+}
+/* Register divs  */
+.divTableRow {
+  display: table-row;
+}
+.divTableRowCentered {
+  margin: auto;
+  position: relative;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.divTableHeading {
+  background-color: #eee;
+  display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+  /* border: 1px solid #999999; */
+  display: table-cell;
+  padding: 3px 10px;
+  vertical-align: middle;
+  border-bottom: 2px solid #123456;
+}
+.divTableHeading {
+  background-color: #eee;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableFoot {
+  background-color: #eee;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
+
+/* sembiraben@gmail.com+ */
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid bisque;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.regContainer {
+  background-color: cornsilk;
+  border-radius: 5%;
+  padding: 5%;
+}
+
+.TOP_HEADERS {
+  background-color: cornsilk;
+  border-radius: 5%;
+  padding: 5%;
+}
+
+.button {
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid cornsilk;
+  border-radius: 4px;
+  background-color: #eee;
+  box-sizing: border-box;
+  glyph-orientation-horizontal: center;
+}
+
+.registerButton {
+  padding: 15px;
+  margin-top: 10px;
+  display: inline-block;
+  border: 2px solid rgb(185, 167, 144);
+  border-radius: 8px;
+  background-color: bisque;
+  box-sizing: border-box;
+  glyph-orientation-horizontal: center;
+  font-size: 15px;
+}
+
+.ERROR {
+  color: red;
+}
+
+body {
+  background: bisque;
+  font-family: roboto;
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: lighten(#ffe4c4, 40%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 6px 1px;
+}
+
+label:hover {
+  background-color: rgba(185, 167, 144, 0.363);
+}
+
+input[type="radio"]:checked + label {
+  color: lighten(bisque, 60%);
+  background: rgb(185, 167, 144);
+}
+
+label + input[type="radio"] + label {
+  border-left: solid 2px rgb(185, 167, 144);
+}
+.radio-group {
+  border: solid 2px #b9a790;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* sembiraben@gmail.com- */
